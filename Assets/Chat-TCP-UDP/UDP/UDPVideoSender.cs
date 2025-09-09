@@ -20,6 +20,13 @@ public class UDPVideoSender : MonoBehaviour
 
     void Start()
     {
+        
+
+        //
+    }
+     
+    public void StartServerUDP()
+    {
         udpClient = new UdpClient();
         // Habilitamos la opción de broadcast en el socket UDP
         udpClient.EnableBroadcast = true;
@@ -33,6 +40,11 @@ public class UDPVideoSender : MonoBehaviour
     }
 
     void Update()
+    {
+        SendFrame();
+    }
+
+    public void SendFrame()
     {
         if (!sendVideo || webcamTexture == null || !webcamTexture.isPlaying) return;
         if (webcamTexture.width < 16 || webcamTexture.height < 16) return;

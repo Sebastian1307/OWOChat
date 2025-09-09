@@ -14,14 +14,19 @@ public class UDPVideoReceiver : MonoBehaviour
 
     void Start()
     {
-        // El servidor escucha en todas las IPs disponibles en el puerto especificado
-        udpServer = new UdpClient(port);
-        remoteEndPoint = new IPEndPoint(IPAddress.Any, port);
-        udpServer.BeginReceive(ReceiveData, null);
         tex = new Texture2D(2, 2);
         remoteView.texture = tex;
     }
-
+    public void StartServerUDP()
+    {
+        // El servidor escucha en todas las IPs disponibles en el puerto especificado
+        udpServer = new UdpClient(port);
+        remoteEndPoint = new IPEndPoint(IPAddress.Any, port);
+        //udpServer.BeginReceive(ReceiveData, null);
+        byte[] sendBytes = System.Text.Encoding.UTF8.GetBytes("Hola servidor"); // Converts the message into a byte array
+        udpServer.Send(sendBytes, sendBytes.Length, remoteEndPoint); // Sends the bytes to the remote server using UDP
+        Debug.Log("Sent to server: "+ "Hola servidor");
+    }
     private void ReceiveData(IAsyncResult result)
     {
         byte[] receivedBytes = udpServer.EndReceive(result, ref remoteEndPoint);

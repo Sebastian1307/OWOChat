@@ -226,6 +226,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1456790521}
+        m_TargetAssemblyTypeName: UDPVideoReceiver, Assembly-CSharp
+        m_MethodName: StartServerUDP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &24039347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,6 +643,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3268429176765749650, guid: d1da2ee8cdb31f6428d469d1aa8ab35c, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301834623005210178, guid: d1da2ee8cdb31f6428d469d1aa8ab35c, type: 3}
+      propertyPath: m_Horizontal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301834623005210178, guid: d1da2ee8cdb31f6428d469d1aa8ab35c, type: 3}
+      propertyPath: m_MovementType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3359366543816048357, guid: d1da2ee8cdb31f6428d469d1aa8ab35c, type: 3}
@@ -2406,7 +2426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serverPort: 4000
-  serverAddress: 192.168.1.7
+  serverAddress: 192.168.1.5
   _client: {fileID: 1144782921}
   messageInput: {fileID: 1691961379}
   userInput: {fileID: 751746322}
@@ -2952,7 +2972,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3636409752279802, guid: 38dc4d03853f533468688e6b358d4db7, type: 3}
       propertyPath: ipAddress
-      value: 192.168.1.7
+      value: 192.168.1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3636409752279802, guid: 38dc4d03853f533468688e6b358d4db7, type: 3}
       propertyPath: localPreview
@@ -3020,7 +3040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7398101143947760124, guid: 38dc4d03853f533468688e6b358d4db7, type: 3}
       propertyPath: ipAddress
-      value: 192.168.1.7
+      value: 192.168.1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3041,6 +3061,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 645098b888d8ce242b8aa8ecc12da1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1456790521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3357128570753114081, guid: 38dc4d03853f533468688e6b358d4db7, type: 3}
+  m_PrefabInstance: {fileID: 1456790518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14374b5bb9e552b4ca7e685f35fd26b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1462837421

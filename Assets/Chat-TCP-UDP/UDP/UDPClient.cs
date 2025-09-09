@@ -28,8 +28,6 @@ public class UDPClient : MonoBehaviour
 
     public void SendData(string message)
     {
-        byte[] sendBytes = System.Text.Encoding.UTF8.GetBytes(message); // Converts the message into a byte array
-        udpClient.Send(sendBytes, sendBytes.Length, remoteEndPoint); // Sends the bytes to the remote server using UDP
-        Debug.Log("Sent to server: " + message);
+        
     }
 }

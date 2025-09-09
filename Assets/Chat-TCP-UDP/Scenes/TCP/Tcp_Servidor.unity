@@ -3789,6 +3789,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7373779296135196859}
+        m_TargetAssemblyTypeName: UDPVideoReceiver, Assembly-CSharp
+        m_MethodName: StartServerUDP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1916471515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4288,6 +4300,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3301834623005210178, guid: d1da2ee8cdb31f6428d469d1aa8ab35c, type: 3}
+      propertyPath: m_Horizontal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301834623005210178, guid: d1da2ee8cdb31f6428d469d1aa8ab35c, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3839956628770321634, guid: d1da2ee8cdb31f6428d469d1aa8ab35c, type: 3}
       propertyPath: m_Name
       value: ChatScrollView
@@ -4474,6 +4494,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38dc4d03853f533468688e6b358d4db7, type: 3}
+--- !u!114 &7373779296135196859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3357128570753114081, guid: 38dc4d03853f533468688e6b358d4db7, type: 3}
+  m_PrefabInstance: {fileID: 7373779296135196858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14374b5bb9e552b4ca7e685f35fd26b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7585795959530970643
 PrefabInstance:
   m_ObjectHideFlags: 0
